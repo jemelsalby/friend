@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddfrndComponent } from './addfrnd/addfrnd.component';
 import { FormsModule } from '@angular/forms';
+import { ViewfrndsComponent } from './viewfrnds/viewfrnds.component';
 
 const routes:Routes=[
   {
-
+    path:"",component:AddfrndComponent
+  },
+  {
+    path:"view",component:ViewfrndsComponent
   }
 ]
 
@@ -19,7 +23,8 @@ const routes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddfrndComponent
+    AddfrndComponent,
+    ViewfrndsComponent
   ],
   imports: [
     BrowserModule,
